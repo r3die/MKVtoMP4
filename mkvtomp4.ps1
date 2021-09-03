@@ -1,4 +1,4 @@
-$Top_Folder = "Destination"
+$Top_Folder = ""
 #Put location of Top Folder within Quotes on line 1
 $Child_Folders = Get-ChildItem -Path $Top_Folder -Recurse |where-Object {$_.PSIsContainer -eq $true }
 
