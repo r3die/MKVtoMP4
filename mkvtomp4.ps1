@@ -21,7 +21,7 @@ Out-File .\convert2.txt)
 $rename = get-item -path .\convert2.txt | get-content -tail 1
 ren output.mp4 $rename
 
-#cleaning up folder and moving .mp4 output to where it will be uploaded to the LensLock portal
+#cleaning up folder and moving .mp4 output
 remove-item .\combine.txt
 remove-item .\convert2.txt
 remove-item .\output.mkv
